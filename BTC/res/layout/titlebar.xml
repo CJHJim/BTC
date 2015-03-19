@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button 
+        android:id="@+id/edit_name"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bt_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/discovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/enable_bt"
+        android:gravity="center"
+        android:background="@drawable/search_bt_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/TVN"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textStyle="normal|bold|italic"
+        android:fontFamily="Condensed bold-italic"
+        android:textSize="25sp"
+        android:text="@string/app_name" />
+
+    <Button
+        android:id="@+id/enable_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/edit_name"
+        android:background="@drawable/enable_dis_btn_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

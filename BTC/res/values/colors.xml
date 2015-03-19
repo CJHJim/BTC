@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="blue_bg">#6640438C</color>
+    <color name="white">#F9F9FC</color>
+    <color name="titleFocusedColor">#A8E3FE</color>
+    <color name="titleactiveColor">#6B7791</color>
+	<color name="whiteColor">#DCE0EC</color>
+	<color name="blue_title">#8383C8</color>
+	<color name="blue_text_normal">#11118E</color>
+	<color name="blue_text_focused">#1791F4</color>
+	<color name="selectcolor">#3859BE</color>
+</resources>

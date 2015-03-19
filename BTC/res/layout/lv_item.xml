@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#00000000">
+    
+    <ImageView
+        android:id="@+id/ic_chat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chat"
+        />
+    <TextView 
+        android:id="@+id/tv_NA"
+        android:layout_toRightOf="@id/ic_chat"
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="名字和地址"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dip"
+        android:layout_alignLeft="@+id/tv_NA"
+        android:layout_below="@+id/tv_NA"
+        android:text="内容"
+        android:textSize="15sp" 
+        android:textColor="#555"
+        android:layout_marginRight="5dip"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_content"
+        android:layout_alignBottom="@+id/tv_content"
+        android:layout_alignParentRight="true"
+        android:text="时间" 
+        android:textColor="#777"/>
+"
+
+</RelativeLayout>

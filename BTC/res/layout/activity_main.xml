@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_bg"
+            android:paddingTop="5dp"
+            android:alpha="100" >
+
+            <TextView
+                android:id="@+id/msg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:textColor="@color/title_text"
+                android:text="聊天" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/msg_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/selectcolor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_bg"
+            android:paddingTop="5dp" 
+             android:alpha="100">
+
+            <TextView
+                android:id="@+id/contact_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:textColor="@color/title_text"
+                android:text="联系人" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/contact_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/selectcolor"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:layout_below="@+id/title">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
